@@ -1,148 +1,160 @@
 /* Bootstrap */
+
 @import 'bootstrap.scss';
 
 /* Google Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700|Roboto:300,400');
 
-/* Variables */
+/* Variables Change */
 
 $border: lightgrey;
+.left {
+    float: left !important;
+}
 
-.left{
-	float: left !important;
+.right {
+    float: right !important;
 }
-.right{
-	float: right !important;
-}
+
 
 /* Main CSS */
 
-body{
-	height: 100%;
-	overflow: scroll;
-	font-family: 'Proxima Nova', sans-serif;
-	font-size: 16px;
+body {
+    height: 100%;
+    overflow: scroll;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
 }
 
 // NAVIGACIJA
-
-.navbar{
-	font-size: 1.1em;
-	text-transform: uppercase;
-	border-top: 0;
-	border-left: 0;
-	border-right: 0;
-	border-radius: 0;
-	margin: 0;
-	border:0;
-}
-.navbar:hover{
-	border:0;
-}
-.breadcrumb{
-	border-radius: 0;
-}
-.navbar-default{
-	background: white;
-	border-color: lightgrey;
-}
-.navbar{
-	padding: 20px 0;
+.navbar {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin: 0;
+    border: 0;
 }
 
-a:link, a:visited, a:active{
-	color: #0aaaaa;
-	/*font-size: 1.2em;*/
-	/*font-weight: bold;*/
+.navbar:hover {
+    border: 0;
+}
+
+.breadcrumb {
+    border-radius: 0;
+}
+
+.navbar-default {
+    background: white;
+    border-color: lightgrey;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #0aaaaa;
+    /*font-size: 1.2em;*/
+    /*font-weight: bold;*/
 }
 
 // LOGO
-.navbar-brand{
-	padding-top: 6px;
-	padding-bottom:6px;
-	padding-left: 30px;
+.navbar-brand {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
 }
 
-.navbar-default .navbar-toggle{
-	border-radius: 0;
-	border-color: transparent;
+.navbar-default .navbar-toggle {
+    border-radius: 0;
+    border-color: transparent;
 }
-img{
-	height: 100%;
+
+img {
+    height: 100%;
 }
 
 // BUTTONS
-.btn, button, textarea, input{
-	border-radius: 0;
-	background-color: #0AAAAA;
-}
-a.btn-primary{
-	border: 0;
-	color: white;
-	border-radius: 1px;
+.btn,
+button,
+textarea,
+input {
+    border-radius: 0;
+    background-color: #0AAAAA;
 }
 
-.form-control{
-	border-radius: 0;
-	padding: 14px 14px;
-	height: auto;
-}
-.btn-contact{
-
-}
-.btn-contact:hover{
-	border-radius: 0;
-	background-color: #0AAAAA;
-	outline: 0;
-}
-.form-control:focus{
-	border-color: #0AAAAA;
-	box-shadow: 0 0 0 0;
-	outline: 0;
+a.btn-primary {
+    border: 0;
+    color: white;
+    border-radius: 1px;
 }
 
-button[type='submit']{
-	font-weight: bold;
-	border: 0;
+.form-control {
+    border-radius: 0;
+    padding: 14px 14px;
+    height: auto;
+}
+
+.btn-contact {}
+
+.btn-contact:hover {
+    border-radius: 0;
+    background-color: #0AAAAA;
+    outline: 0;
+}
+
+.form-control:focus {
+    border-color: #0AAAAA;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+button[type='submit'] {
+    font-weight: bold;
+    border: 0;
 }
 
 // COVER
-.cover{
-	font-family: 'Roboto';
-	color: black;
-	/*background-color: black;*/
-	color: white;
-	padding: 40px 0;
-/*	height: 100%;
+.cover {
+    font-family: 'Roboto';
+    color: black;
+    /*background-color: black;*/
+    color: white;
+    padding: 40px 0;
+    /*	height: 100%;
 	width: 100%;
 	min-height: 100%;*/
 }
 
-.cover a:hover:after{
-	content: ' >';
-	font-size: 0.8em;
+.cover a:hover:after {
+    content: ' >';
+    font-size: 0.8em;
 }
 
 // HEADINGS
-
-h1{
-	/*font-size: 2.8em;*/
-	/*font-weight: 300;*/
-	/*line-height: 1.6;*/
-	/*margin-bottom: 14px;*/
-	transition: all .4s ease;
-
-}
-h1:hover{
-	color: #0AAAAA;
+h1 {
+    /*font-size: 2.8em;*/
+    /*font-weight: 300;*/
+    /*line-height: 1.6;*/
+    /*margin-bottom: 14px;*/
+    transition: all .4s ease;
 }
 
-p{
-	/*font-size: 1.2em;*/
-	font-weight: 300;
-	line-height: 1.6;
+h1:hover {
+    color: #0AAAAA;
 }
 
+p {
+    /*font-size: 1.2em;*/
+    font-weight: 300;
+    line-height: 1.6;
+}
 
 
 /*
@@ -154,216 +166,179 @@ p{
 
 */
 
-
 // PREDVAČ - SINGLE 
-
-
-h1{
-	/*margin-bottom: 0;*/
-	/*font-weight: 300;*/
-	/*line-height: 1.4;*/
-}
-h2{
-	/*margin-top: 0;*/
-	/*font-weight: 300;*/
-	/*text-align: center;*/
-	transition: all .3s ease;
+h1 {
+    /*margin-bottom: 0;*/
+    /*font-weight: 300;*/
+    /*line-height: 1.4;*/
 }
 
-h2:hover{
-	color: black;
+h2 {
+    /*margin-top: 0;*/
+    /*font-weight: 300;*/
+    /*text-align: center;*/
+    transition: all .3s ease;
+}
+
+h2:hover {
+    color: black;
 }
 
 // TIM
-
-h3{
-	/*text-transform: uppercase;*/
-	/*text-align: center;*/
-	/*font-weight: bold;*/
-	/*font-size: 1.3em;*/
-	/*margin-bottom: 30px;*/
+h3 {
+    /*text-transform: uppercase;*/
+    /*text-align: center;*/
+    /*font-weight: bold;*/
+    /*font-size: 1.3em;*/
+    /*margin-bottom: 30px;*/
 }
-
 
 // BOX
-.box{}
-.box img{
-	width: 100%;
+.box {}
+
+.box img {
+    width: 100%;
 }
 
-.primary img, .secondary img{
-	width: 100%;
+.primary img,
+.secondary img {
+    width: 100%;
 }
-
-
-
-
 
 // FOOTER
-.footer{
-	/*border-top: 1px solid grey;*/
-	font-size: 1em;
-	line-height: 1;
-	text-transform: inherit;
-	padding: 40px 0;
-}
-a.telefon, a.personal-footer{
-	color: black;
-	border: 0;
-	outline: 0;
-	background-color: white;
-	display: inline-block;
+.footer {
+    /*border-top: 1px solid grey;*/
+    font-size: 1em;
+    line-height: 1;
+    text-transform: inherit;
+    padding: 40px 0;
 }
 
-a.telefon:hover, a.personal-footer:hover{
-	color: #0AAAAA;
+a.telefon,
+a.personal-footer {
+    color: black;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    display: inline-block;
 }
 
-
-
-
-
-
-
-
-
+a.telefon:hover,
+a.personal-footer:hover {
+    color: #0AAAAA;
+}
 
 // TRANSITION
-
-a.telefon, a.personal-footer{
-	transition: all .2s ease;
+a.telefon,
+a.personal-footer {
+    transition: all .2s ease;
 }
-
-
-
 
 // PRIMARY & SECONDARY
-
-.primary,.secondary{
-	padding: 80px 0;
-}
-.primary{
-	background-color: #272F35;
-	color: #FFFFFF;
-}
-.secondary{
-	background-color: #FFFFFF;
-	color: #000000;
-}
-.primary p{
-	color: white;
-}
-.primary p, .secondary p{
-	font-size: 1.5em;
+.primary,
+.secondary {
+    padding: 80px 0;
 }
 
+.primary {
+    background-color: #272F35;
+    color: #FFFFFF;
+}
+
+.secondary {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.primary p {
+    color: white;
+}
+
+.primary p,
+.secondary p {
+    font-size: 1.5em;
+}
 
 // KONTAKT
-
-.form-group select{
-	padding: 10px;
+.form-group select {
+    padding: 10px;
 }
-
-
-
-
-
 
 // PREDAVAC
+.predavac {}
 
-.predavac{
-
+.predavac-paragraf {
+    margin: 20px 0;
+    font-size: 1.2em;
 }
-.predavac-paragraf{
-	margin: 20px 0;
-	font-size: 1.2em;
-}
-
 
 // TABLE
-
-.table { 
-	display:table; 
-	vertical-align: middle;
-	text-transform: uppercase;
-}
-a.table-row:link, a.table-row:active, a.table-row:visited{ 
-	display:table-row; 
-	height: 80px;
-	box-sizing: border-box;
-	// background: lightgrey;
-	transition: all .3s ease;
-	box-sizing: border-box;
-	text-decoration: none;
-	color: black;
-
+.table {
+    display: table;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
-a.table-row:hover{
-	background-color: lightgrey;
+a.table-row:link,
+a.table-row:active,
+a.table-row:visited {
+    display: table-row;
+    height: 80px;
+    box-sizing: border-box;
+    // background: lightgrey;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
 
-.table-cell { 
-	display:table-cell; 
-vertical-align: middle;
-	padding: 0 20px;
+a.table-row:hover {
+    background-color: lightgrey;
 }
 
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px;
+}
 
 // CLANAK - POSAO
-
-h4{
-	/*font-weight: bold;*/
-	/*font-size: 1em;*/
-	/*text-transform: uppercase;*/
+h4 {
+    /*font-weight: bold;*/
+    /*font-size: 1em;*/
+    /*text-transform: uppercase;*/
 }
+
 .clanak {
-	font-size: 1.1em !important;
-	line-height: 1.4 !important;
-	font-weight: 300 !important;
-}
-.clanak ul li{
-	font-size: 1.1em !important;
-	line-height: 1.6 !important;
-	font-weight: 300 !important;
+    font-size: 1.1em !important;
+    line-height: 1.4 !important;
+    font-weight: 300 !important;
 }
 
-
-
-
-
-
-
-
-
+.clanak ul li {
+    font-size: 1.1em !important;
+    line-height: 1.6 !important;
+    font-weight: 300 !important;
+}
 
 // RESPONSIVE
-
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-	
-
-	// Replace
-
-
+@media (min-width: 576px) {
+    // Replace
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-.telefon{
-		float:right !important;
-	}
-	.predavac-paragraf{
-		font-size: 1.5em;
-}
+@media (min-width: 768px) {
+    .telefon {
+        float: right !important;
+    }
+    .predavac-paragraf {
+        font-size: 1.5em;
+    }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-
-}
+@media (min-width: 992px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
-}
+@media (min-width: 1200px) {}
